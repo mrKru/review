@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Reviews</title>
+	<!--TinyMCE-->
+	<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+	<!--Jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">	
+
+</head>
+<body>
+	<div class="parrent">
+		<h1>Отзывы</h1>
+		<div class="review-container">
+			<div class="review review-template">
+				<div class="review-date"></div>
+				<div class="review-username"></div>
+				<div class="review-content"></div>
+				<div class="review-email"></div>
+			</div>
+		</div>
+		<div class="button">
+			<button type="button" class="add-coment">Оставить отзыв</button>
+		</div>
+		<div class="simple-review-form">
+			<h2>Ваш отзыв</h2>
+			<form name="reviewForm" method="post" class="review-form">
+				<div class="input-row">
+					<label class="label" for="">Ваше имя:*</label>
+					<input class="input" type="text" name="name" requaired>
+				</div>
+				<div class="input-row">
+					<label class="label" for="">Ваш Email:*</label>
+					<input class="input" type="email" name="email" requaired>
+				</div>			
+				<div class="title-textarea">
+					<label class="label" for="">Ваш отзыв:</label>
+				</div>
+				<textarea name="content" class="editor"></textarea>
+				<div class="checkbox">
+					<span>Обязательны поля отмечены *</span>
+					<p>
+						<input type="checkbox" name="confirm" requaired><span>Подтвердите, что вы не спамер</span>
+					</p>
+				</div>
+				<button class="submit" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
